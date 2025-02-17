@@ -1,0 +1,6 @@
+{
+  "temperature": "22.48",
+  "humidity": "39.51",
+  "pressure": "1014.81",
+  "date": "2025-02-13"
+}

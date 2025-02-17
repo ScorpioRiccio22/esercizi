@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stefano Riccio - Profilo Personale</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/Aestetic.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="navbar">
+
+      <div class="nav-photo">
+
+      <img src="img/Greninja_shiny.png" alt="pokemon preferito" class="nav-photo">
+
+      </div>
+
+      <div class="nav-a">
+
+      <a class="nav-a" href="#informazioniPersonali">Informazioni Personali</a>
+      <a class="nav-a" href="#titoliStudio">Titoli di Studio</a>
+      <a class="nav-a" href="#hobby">I Miei Hobby</a>
+      <a class="nav-a" href="#meteo">Il Meteo Oggi</a>
+        <a class="nav-a" href="#api">Mia API </a>
+      <a class="nav-a" href="#contatti">I Miei Contatti</a>
+
+
+      </div>
+
+    </div>
+
+    <div id="informazioniPersonali" class="section">
+
+      <div class="photo-section">
+
+      <h1> Una Mia Foto:</h1>
+      <img src="img/me.jpg" alt="Mia foto laurea" class="photo">
+
+      </div>
+
+      <div class ="info-section">
+
+        <h2>Informazioni Personali:</h2>
+      <ul>
+        <li><strong>Nome:</strong> Stefano</li>
+        <li><strong>Cognome:</strong> Riccio</li>
+        <li><strong>Età:</strong> 27 anni.</li>
+        <li><strong>Luogo di nascita:</strong> Napoli, Italia.</li>
+        <li><strong>Professione:</strong> Ex Biologo, Ex Farmacista, Aspirante lavoratore IT.</li>
+        <li><strong>Interessi:</strong> Palestra, Anime, Manga, Serie TV, Film, Calcio, Tecnologia.</li>
+      </ul>
+
+      </div>
+
+    </div>
+
+    <div id="titoliStudio" class="section">
+
+      <div>
+
+        <img src="img/omino%20laureato.png.jpg" alt="omino laureato" class="photo2">
+
+      </div>
+
+      <div class="studySection">
+
+      <h2>Titoli di Studio</h2>
+        <ul>
+          <li>Accademy Testing Automation 2024</li>
+          <li>Laurea Magistrale Scienze Biologiche Indirizzo Biosicurezza 2022/2023 <strong>Voto: </strong> 110L/110L</li>
+          <li>Laurea Triennale Scienze Biologiche Indirizzo Fisiopatologico 2019/2020 <strong> Voto: </strong> 100/110L</li>
+          <li>Diploma Liceo Scientifico Classico 2016/2017 <strong> Voto: </strong> 90/100</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div id="hobby" class="section">
+
+      <div class="hobby-presentation">
+
+        <h1>I Miei Hobby:</h1>
+        <p>
+          Come ogni ragazzo della mia età, passo il tempo libero a coltivare e dar sfogo a più passioni ed hobby possibili.
+        Di seguito troverai una tabella in cui elencherò i miei hobby principali assegnandoci un livello di esperienza...
+          sentiti libero di modificarli e/o aggiungerne qualcuno di nuovo.
+        </p>
+
+      </div>
+
+      <div class="table-div">
+
+        <table id="table">
+          <tr style="display: none;"> <td id="userID">1</td></tr>
+          <tr>
+            <td colspan="2" style="text-align:center; font-weight:bold;">I MIEI HOBBY</td>
+          </tr>
+          <tr>
+            <th>Hobby</th>
+            <th>Livello Esperienza</th>
+            <th>Gestione</th>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+    <div id="meteo" class="section">
+
+      <div class="grid-meteo">
+
+        <h1> Controlla il Meteo!!</h1>
+        <input class="input-meteo" type="text" id="citta" placeholder="Inserisci una città">
+
+        <button onclick=getMeteo() id="btn" name="button" class="button">Ottieni Meteo</button>
+
+        <div id="risultato"></div>
+
+      </div>
+
+    </div>
+
+    <div id="api" class="section">
+      <h2>Dati Sensori</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Temperatura (°C)</th>
+          <th>Pressione (hPa)</th>
+          <th>Umidità (%)</th>
+          <th>Azioni</th>
+        </tr>
+        </thead>
+        <tbody id="dataBody">
+        <tr>
+          <td id="temp">--</td>
+          <td id="pressione">--</td>
+          <td id="umidita">--</td>
+          <td>
+            <button id="avvio">Avvia</button>
+            <button id="storico">Storico</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <h3>Dati Storici</h3>
+      <table>
+        <thead>
+        <tr>
+          <th>Temperatura (°C)</th>
+          <th>Pressione (hPa)</th>
+          <th>Umidità (%)</th>
+        </tr>
+        </thead>
+        <tbody id="historyBody">
+        </tbody>
+      </table>
+
+    </div>
+
+
+    <div id="contatti" class="section">
+
+      <div class="contattiSection">
+
+        <h1>📩 Contattami</h1>
+        <form id="contactForm">
+
+          <div class="form-group">
+
+            <label for="nome2">Nome:</label>
+            <input type="text" id="nome2" name="nome2" required>
+            <span class="error" id="nomeError"></span>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome" required>
+            <span class="error" id="cognomeError"></span>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <span class="error" id="telefonoError"></span>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="messaggio">Messaggio:</label>
+            <textarea id="messaggio" name="messaggio" required></textarea>
+            <span class="error" id="messaggioError"></span>
+
+          </div>
+
+          <button type="submit">Invia</button>
+          <p id="successMessage" class="success-message"></p>
+        </form>
+
+      </div>
+
+      <div class="social-links">
+
+        <h1>Seguimi sui social:</h1>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/stefano-riccio-82189a1a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/Scorpio22Riccio" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://www.instagram.com/scorpioriccio22/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+
+      </div>
+
+  </div>
+
+  </div>
+
+</body>
+</html>
