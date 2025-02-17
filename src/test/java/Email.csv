@@ -1,0 +1,7 @@
+Email-----Boolean
+test@example.com, true,
+invalid@ site.com, false,
+another.test@example.org, true,
+example@subdomain.example.com, true,
+bad@website, false,
+@nouser.com, false
