@@ -1,0 +1,433 @@
+:root {
+width:100%;
+  height:100%;
+}
+body,
+html {
+  background: linear-gradient(135deg, #f8feff, #eaf9ff, #def3ff);
+  width:100%;
+  height:100%;
+  margin:0;
+}
+{/* CSS LoginPage*/}
+.login-container{width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.login-form
+{
+  margin-top:12%;
+  background-color:white;
+  width:30%;
+  height:70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius:20px;
+  border:5px solid black;
+  gap:20px;
+}
+
+.login-form input
+{
+  font-size:20px;
+  border-radius: 10px;
+  border:2px solid black;
+}
+
+.login-form span
+{
+  font-size:20px;
+  color:blue;
+}
+.login-form button
+{
+  border-radius:20px;
+  font-weight:bold;
+  font-size:20px;
+}
+.login-form p
+{
+  font-size:20px;
+}
+
+{/*CSS forgotPassword*/}
+
+.forgot-password-container{width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+
+.forgot-password-form
+{
+  margin-top:12%;
+  background-color:white;
+  width:30%;
+  height:70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius:20px;
+  border:5px solid black;
+  gap:20px;
+}
+.forgot-password-form input
+{
+  font-size:20px;
+  border-radius: 10px;
+  border:2px solid black;
+}
+
+.forgot-password-form span
+{
+  font-size:20px;
+  color:blue;
+}
+.forgot-password-form button
+{
+  border-radius:20px;
+  font-weight:bold;
+}
+.forgot-password-form p
+{
+  font-size:20px;
+}
+
+{/*CSS RegisterPage*/}
+.register-container
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+
+.register-form
+{
+  margin-top:12%;
+  background-color:white;
+  width:30%;
+  height:70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius:20px;
+  border:5px solid black;
+  gap:20px;
+}
+.register-form input
+{
+  font-size:20px;
+  border-radius: 10px;
+  border:2px solid black;
+}
+
+.register-form span
+{
+  font-size:20px;
+  color:blue;
+}
+.register-form button
+{
+  border-radius:20px;
+  font-weight:bold;
+}
+.register-form p
+{
+  font-size:20px;
+}
+
+{/*CSS Navbar*/}
+
+.navbar
+{
+  width:100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffe6f2;
+  margin: 0 !important;
+  min-height: 40px;
+  border-radius:10px;
+}
+
+#dropdown-menu
+{
+  height:40px;
+  border-radius:10px;
+  color:white;
+  background-color: black;
+}
+.dropdown-item
+{
+  height:80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:30px;
+  align-items: center;
+  width:100%;
+  font-size:40px;
+}
+.navbar img
+{
+  height:40px;
+}
+.logout-button
+{
+  margin-right: 1px;
+  border-radius:10px;
+  border:2px solid black;
+  background-color:red;
+  font-size:18px;
+}
+{/*CSS HomePage*/}
+.home-container
+{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  padding:0;
+}
+.home-header
+{
+  display: flex;
+  width:100%;
+  max-height:400px;
+}
+.home-header img
+{
+  max-height:10%;
+  width: 100%;
+}
+
+.footer
+{
+  position: fixed;
+  bottom: 0 !important;
+  display: flex; /* Imposta il contenitore come flexbox */
+  flex-direction: row; /* Dispone gli elementi in riga (default) */
+  justify-content: flex-start;/* Spazio tra gli elementi */
+  width:100%;
+  background-color:white;
+  gap:60px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #1da1f2;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffcc00;
+}
+{/*CSS InformazioniPages*/}
+.informazioni-container
+{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+.info-header
+{
+  display: flex;
+  width:100%;
+  max-height:200px;
+}
+.info-header img
+{
+  max-height:10%;
+  width: 100%;
+}
+.step-info-container
+{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.step-info-container img
+{
+  margin-top:2%;
+  border-radius:20px;
+max-height:400px;
+}
+.info-nextButton
+{
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+
+}
+.info-nextButton:hover
+{
+  background-color: gold;
+}
+.step-info
+{
+  margin-top:10%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius:20px;
+  border:5px solid black;
+  transform: translate(-50%, -50%);
+  width:20%;
+  background-color:#FFE6F2;
+}
+.step-info p
+{
+  font-size:30px;
+  color:black;
+  font-weight: bold;
+}
+.info-logo
+{
+  height:200px;
+}
+{/*CSS StudyTitlePages*/}
+
+.study-container
+{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+.study-header
+{
+  display: flex;
+  width:100%;
+  max-height:200px;
+}
+.study-header img
+{
+  max-height:10%;
+  width: 100%;
+}
+.study-content
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.study-content img
+{
+  max-height:10%;
+  width: 20%;
+}
+.study-table
+{
+  width:50%;
+  background: #ffe6f2;
+  border-radius:20px;
+  border:5px solid black;
+  margin-left:9%;
+  margin-top:5%;
+}
+.study-table th, .study-table td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.study-table th {
+  background-color: #007BFF;
+  color: white;
+  text-transform: uppercase;
+}
+
+{/*CSS per HobbyPages*/}
+.hobby-container
+{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+.hobby-header
+{
+  display: flex;
+  width:100%;
+  max-height:200px;
+}
+.hobby-header img
+{
+  max-height:10%;
+  width: 100%;
+}
+.ag-theme-alpine-dark
+{
+  margin-left:5%;
+  margin-top:2%;
+}
+.hobby-add-container
+{
+  margin-left:5%;
+}
+{/*CSS per ViaggiPage*/}
+.interactive-container
+{
+  width:100%;
+  height: 100%;
+}
+.interactive-header
+{
+  display: flex;
+  width:100%;
+  max-height:200px;
+}
+.interactive-header img
+{
+  max-height:10%;
+  width: 100%;
+}
+
+
+
+
+
+
+
