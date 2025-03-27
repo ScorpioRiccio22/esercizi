@@ -1,0 +1,253 @@
+/* Login.css - versione senza logo con tema droni */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  background: linear-gradient(135deg, #f8feff, #eaf9ff, #def3ff);
+
+
+}
+
+.login-container {
+  max-width: 500px;
+  width: 90%;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  position: relative;
+  border-top: 4px solid #0093e9;
+}
+
+.login-container h1 {
+  color: black;
+  align-items: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9fafc;
+  transition: all 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #0093e9;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 147, 233, 0.15);
+  transform: translateY(-2px);
+}
+
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #0093e9, #00c6fb);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.login-container button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.login-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 147, 233, 0.3);
+}
+
+.login-container button:hover:before {
+  left: 100%;
+}
+
+.login-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.login-checkbox label {
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.login-checkbox input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  margin-bottom: 0;
+  accent-color: #0093e9;
+}
+
+.login-checkbox span {
+  color: #0093e9 !important;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.login-checkbox span:hover {
+  color: #00c6fb !important;
+  text-decoration: underline;
+}
+
+.login-register {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.login-register span {
+  color: #0093e9 !important;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.login-register span:hover {
+  color: #00c6fb !important;
+  text-decoration: underline;
+}
+
+/* Styling per il messaggio di errore */
+.login-container p[style*="color: red"] {
+  color: #e53e3e !important;
+  background-color: #fff5f5;
+  padding: 10px 12px;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  border-left: 3px solid #e53e3e;
+  display: flex;
+  align-items: center;
+}
+
+.login-container p[style*="color: red"]:before {
+  content: "⚠️";
+  margin-right: 8px;
+}
+
+/* Aggiunte specifiche per tema droni */
+.drone-control-status {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #666;
+}
+
+.drone-control-status .status-item {
+  display: flex;
+  align-items: center;
+}
+
+.drone-control-status .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #4ade80;
+  box-shadow: 0 0 5px #4ade80;
+  animation: pulse 2s infinite;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.login-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.login-checkbox input {
+  margin-bottom: 1px; /* Rimuovi margine sotto l'input */
+  margin-right: 10px; /* Distanza tra checkbox e la scritta "Ricordami" */
+}
+
+.login-checkbox span {
+  cursor: pointer;
+  color: #0093e9 !important;
+}
+
+.login-checkbox button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1266f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 0 !important;
+}
+
+.login-checkbox button:hover {
+  background-color: #0a58ca;
+}
+
+.login-checkbox a {
+  text-decoration: none;
+  color: #1266f1;
+  font-weight: bold;
+}
+
+.login-checkbox a:hover {
+  text-decoration: underline;
+}
+.login-register p {
+  color: black;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(74, 222, 128, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+  }
+}

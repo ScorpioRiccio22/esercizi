@@ -1,0 +1,21 @@
+/* missione.css */
+.missione-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.grafico-section,
+.mappa-section {
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.missione-container  h2 {
+  color: black;
+  margin-bottom: 15px;
+}
